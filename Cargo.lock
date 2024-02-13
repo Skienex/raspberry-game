@@ -13,6 +13,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "hc-sr04"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "875be774cd3d78313a604584f181ee4ab4ffe193574bdc3fcf2ea0b14c7220c8"
+dependencies = [
+ "rppal 0.14.1",
+]
+
+[[package]]
 name = "lcd1602-rs"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -47,8 +56,18 @@ checksum = "8d5439c4ad607c3c23abf66de8c8bf57ba8adcd1f129e699851a6e43935d339d"
 name = "raspberry"
 version = "0.1.0"
 dependencies = [
+ "hc-sr04",
  "lcd1602-rs",
- "rppal",
+ "rppal 0.17.1",
+]
+
+[[package]]
+name = "rppal"
+version = "0.14.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "612e1a22e21f08a246657c6433fe52b773ae43d07c9ef88ccfc433cc8683caba"
+dependencies = [
+ "libc",
 ]
 
 [[package]]

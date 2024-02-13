@@ -4,5 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+hc-sr04 = "0.1.1"
 lcd1602-rs = "0.1.0"
 rppal = "0.17.1"
+
+[profile.release]
+strip = "debuginfo"
+lto = true
